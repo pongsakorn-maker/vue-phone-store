@@ -1,10 +1,15 @@
 <template>
   <div id="app">
-    <div id="nav">
-      <router-link to="/">Home</router-link> |
-      <router-link to="/about">About</router-link>
-    </div>
-    <router-view/>
+    <v-app-bar>
+      <div id="nav">
+        <router-link to="/">Home</router-link> |
+        <router-link to="/about">About</router-link>
+      </div>
+      <v-btn icon color="warning" fab dark
+        ><v-avatar>mdi-account-circle </v-avatar></v-btn
+      ></v-app-bar
+    >
+    <router-view />
   </div>
 </template>
 
@@ -18,7 +23,9 @@
 }
 
 #nav {
-  padding: 30px;
+  margin: auto;
+  width: 50%;
+  padding: 10px;
 
   a {
     font-weight: bold;
